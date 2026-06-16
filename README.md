@@ -296,8 +296,10 @@ Expected Response:
 
 Inside H2 Console:
 
+Run:
+
 ```sql
-SELECT * FROM flyway_schema_history;
+SELECT * FROM "flyway_schema_history";
 ```
 
 Expected:
@@ -307,6 +309,23 @@ V1__Create_product_table
 V2__Insert_sample_data
 ```
 
+## Verify Product Table Data
+
+Inside H2 Console:
+
+Run:
+
+```sql
+SELECT * FROM PRODUCT;
+```
+
+Expected Result:
+
+| ID | NAME | DESCRIPTION | PRICE |
+|----|------|-------------|--------|
+| 1 | Gaming Mouse | Wireless RGB mouse | 49.99 |
+| 2 | Mechanical Keyboard | Cherry MX Blue switches | 89.50 |
+| 3 | 4K Monitor | 32-inch ultra HD display | 349.00 |
 ---
 
 ## Run Locally
