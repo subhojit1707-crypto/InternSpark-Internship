@@ -180,17 +180,17 @@ curl http://localhost:8080/api/products/1
 ## Create Product
 
 ```bash
-curl -X POST http://localhost:8080/api/products ^
--H "Content-Type: application/json" ^
--d "{\"name\":\"Laptop\",\"description\":\"Gaming Laptop\",\"price\":1200}"
+curl -X POST http://localhost:8080/api/products \
+-H "Content-Type: application/json" \
+-d '{"name":"Laptop","description":"Gaming Laptop","price":20000}'
 ```
 
 ## Update Product
 
 ```bash
-curl -X PUT http://localhost:8080/api/products/1 ^
--H "Content-Type: application/json" ^
--d "{\"name\":\"Laptop Pro\",\"description\":\"Updated Laptop\",\"price\":1500}"
+curl -X PUT http://localhost:8080/api/products/1 \
+-H "Content-Type: application/json" \
+-d '{"name":"Laptop Pro","description":"Updated Laptop","price":150000}'
 ```
 
 ## Delete Product
@@ -262,9 +262,9 @@ INFO ProductService : Fetching all products
 Create Product:
 
 ```bash
-curl -X POST http://localhost:8080/api/products ^
--H "Content-Type: application/json" ^
--d "{\"name\":\"Phone\",\"description\":\"Android Phone\",\"price\":500}"
+curl -X PUT http://localhost:8080/api/products/1 \
+-H "Content-Type: application/json" \
+-d '{"name":"Android","description":"Android Phone","price":15000}'
 ```
 
 Expected log:
