@@ -2,6 +2,15 @@
 
 A RESTful Product Management API built with Spring Boot. This project demonstrates CRUD operations, DTO validation, database migrations using Flyway, unit testing with JUnit and Mockito, and application logging with SLF4J.
 
+> **Reviewer Note**
+>
+> Detailed documentation for each internship task is available in the 
+"TaskS" folders within this repository. The folder contains the respective task folder named as Task1, Task2 and Task3, which contains a comprehensive PDF report, screenshots, verification outputs, and supporting files demonstrating the implementation and successful completion of the task requirements.
+>
+> Please refer to:
+>
+> - 📂 Tasks
+
 ## Features
 
 ## Task 1 – REST API Development
